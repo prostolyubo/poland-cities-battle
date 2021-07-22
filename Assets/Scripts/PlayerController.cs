@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
 
     public PlayerActor target;
 
-    public ControlScheme controls;
+    public ControlSchemeDealer controls;
 
     void FixedUpdate()
     {
@@ -30,12 +30,12 @@ public class PlayerController : MonoBehaviour
         bool move = true;
 
         PlayerActor.Direction direction = PlayerActor.Direction.NONE;
-        if (Input.GetKey(controls.left))
+        if (Input.GetKey(controls.scheme.left))
         {
             direction = PlayerActor.Direction.LEFT;
             target.SetFlip(true);
         }
-        else if (Input.GetKey(controls.right))
+        else if (Input.GetKey(controls.scheme.right))
         {
             direction = PlayerActor.Direction.RIGHT;
             target.SetFlip(false);
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (isGrounded && Input.GetKeyDown(controls.jump))
+        if (isGrounded && Input.GetKeyDown(controls.scheme.jump))
             target.Move(PlayerActor.Direction.NONE, isGrounded, true);
 
         if (body.velocity.y > maxJumpVelocity)

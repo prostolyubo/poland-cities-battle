@@ -20,15 +20,21 @@ public class BladeActor : MonoBehaviour
 
     private void HandleHit()
     {
+        if(animator[animator.clip.name].normalizedTime < float.Epsilon)
+        {
+            animator.Stop();
+            FinishMove();
+            return;
+        }
         animator[animator.clip.name].speed = -1;
         isReversed = true;
     }
 
     private void HandleUse(Action callback)
     {
-        dealer.isDealing = true;
         this.callback = callback;
         animator.Play();
+        dealer.isDealing = true;
     }
 
     public void AnimationStart()

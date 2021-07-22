@@ -64,13 +64,16 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BladeActor.cs" />
     <Compile Include="Assets\Scripts\ControlScheme.cs" />
+    <Compile Include="Assets\Scripts\ControlSchemeDealer.cs" />
     <Compile Include="Assets\Scripts\CooldownWeaponController.cs" />
     <Compile Include="Assets\Scripts\DamageDealer.cs" />
     <Compile Include="Assets\Scripts\DamageDealerCollider.cs" />
     <Compile Include="Assets\Scripts\DamageDealerTrigger.cs" />
     <Compile Include="Assets\Scripts\HoldWeaponController.cs" />
+    <Compile Include="Assets\Scripts\ParticleTerminator.cs" />
     <Compile Include="Assets\Scripts\PlayerActor.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Potato.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\ProjectileActor.cs" />
     <Compile Include="Assets\Scripts\RoundManager.cs" />

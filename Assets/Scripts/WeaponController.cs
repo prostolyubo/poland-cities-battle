@@ -9,12 +9,12 @@ public abstract class WeaponController : MonoBehaviour
 
     protected bool isLocked = false;
     [SerializeField]
-    ControlScheme controls;
+    ControlSchemeDealer controls;
 
     [SerializeField]
     bool isPrimary;
 
-    protected KeyCode ActionKeyCode => isPrimary ? controls.primary : controls.secondary;
+    protected KeyCode ActionKeyCode => isPrimary ? controls.scheme.primary : controls.scheme.secondary;
 
     protected void Use()
     {
