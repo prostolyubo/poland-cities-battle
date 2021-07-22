@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public Transform feet, root;
 
     public Rigidbody2D body;
+    public float maxJumpVelocity = 5f;
 
     bool isFlipped;
 
@@ -48,6 +49,9 @@ public class PlayerController : MonoBehaviour
     {
         if (isGrounded && Input.GetKeyDown(controls.jump))
             target.Move(PlayerActor.Direction.NONE, isGrounded, true);
+
+        if (body.velocity.y > maxJumpVelocity)
+            body.velocity = new Vector2(body.velocity.x, maxJumpVelocity);
 
         /*Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (feet.position.x > mousePos.x)

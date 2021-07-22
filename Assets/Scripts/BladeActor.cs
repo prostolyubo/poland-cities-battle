@@ -10,10 +10,18 @@ public class BladeActor : MonoBehaviour
 
     Action callback;
     public Animation animator;
+    bool isReversed;
 
     private void Awake()
     {
         controller.OnUseTriggered += HandleUse;
+        dealer.OnHit += HandleHit;
+    }
+
+    private void HandleHit()
+    {
+        animator[animator.clip.name].speed = -1;
+        isReversed = true;
     }
 
     private void HandleUse(Action callback)
@@ -23,6 +31,15 @@ public class BladeActor : MonoBehaviour
         animator.Play();
     }
 
+    public void AnimationStart()
+    {
+        if (!isReversed)
+            return;
+        isReversed = false;
+        animator[animator.clip.name].speed = 1;
+        animator.Stop();
+        FinishMove();
+    }
 
     public void FinishMove()
     {
