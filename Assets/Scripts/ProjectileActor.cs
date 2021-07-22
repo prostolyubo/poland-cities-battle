@@ -31,9 +31,9 @@ namespace Assets
 
         private void Shoot(Action obj)
         {
-            if (stamina.currentStamina < staminaCost)
+            if (stamina.CurrentStamina < staminaCost)
                 return;
-            stamina.currentStamina -= staminaCost;
+            stamina.CurrentStamina -= staminaCost;
             Shoot(Instantiate(prefab));
             stamina.StartReplenishing();
         }

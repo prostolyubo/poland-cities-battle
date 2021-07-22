@@ -8,18 +8,27 @@ public class PlayerActor : MonoBehaviour
     public float movementSpeed, flightSpeed, jumpStrength;
     public Rigidbody2D target;
     public Transform root;
+    public Stamina stamina;
 
     public static event Action<PlayerActor> OnDamageTaken;
 
     public float HP;
+    public float maxHP;
 
     bool isFlipped;
+
+    public static event Action<PlayerActor> OnStaminaChanged;
 
     public enum Direction
     {
         NONE,
         LEFT,
         RIGHT
+    }
+
+    private void Awake()
+    {
+        stamina.OnStaminaChanged += (float _) => OnStaminaChanged?.Invoke(this);
     }
 
     public void Move(Direction direction, bool isGrounded, bool jump)

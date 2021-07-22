@@ -38,10 +38,10 @@ public class ShieldActor : MonoBehaviour
         if (!isShielding)
             return;
 
-        stamina.currentStamina -= Time.deltaTime;
-        if (stamina.currentStamina <= 0)
+        stamina.CurrentStamina -= Time.deltaTime;
+        if (stamina.CurrentStamina <= 0)
         {
-            stamina.currentStamina = 0;
+            stamina.CurrentStamina = 0;
             HandleDisengage();
         }
     }

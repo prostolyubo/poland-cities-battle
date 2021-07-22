@@ -5,9 +5,19 @@ using UnityEngine;
 public class Stamina : MonoBehaviour
 {
     public float maxStamina;
-    public float currentStamina;
+    public float CurrentStamina
+    {
+        get { return currentStamina; }
+        set {
+            currentStamina = value;
+            OnStaminaChanged?.Invoke(currentStamina);
+        }
+    }
     public float regenSpeed;
+    [SerializeField]
+    private float currentStamina;
 
+    public event Action<float> OnStaminaChanged;
     public void StartReplenishing()
     {
         enabled = true;
@@ -15,10 +25,10 @@ public class Stamina : MonoBehaviour
 
     public void Update()
     {
-        currentStamina += regenSpeed * Time.deltaTime;
-        if (currentStamina > maxStamina)
+        CurrentStamina += regenSpeed * Time.deltaTime;
+        if (CurrentStamina > maxStamina)
         {
-            currentStamina = maxStamina;
+            CurrentStamina = maxStamina;
             enabled = false;
             return;
         }
