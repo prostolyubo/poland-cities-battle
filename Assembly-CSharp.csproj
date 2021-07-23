@@ -85,8 +85,10 @@
     <Compile Include="Assets\Scripts\SimpleWeaponController.cs" />
     <Compile Include="Assets\Scripts\SpriteAnimator.cs" />
     <Compile Include="Assets\Scripts\Stamina.cs" />
+    <Compile Include="Assets\Scripts\UI\CharacterSelector.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerBar.cs" />
     <Compile Include="Assets\Scripts\WeaponController.cs" />
+    <None Include="Assets\GFX\Text\Legends.txt" />
     <Reference Include="UnityEngine">
       <HintPath>G:/TOOLS/UnityEditors/2019.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
