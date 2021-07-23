@@ -69,9 +69,11 @@
     <Compile Include="Assets\Scripts\DamageDealer.cs" />
     <Compile Include="Assets\Scripts\DamageDealerCollider.cs" />
     <Compile Include="Assets\Scripts\DamageDealerTrigger.cs" />
+    <Compile Include="Assets\Scripts\GoatAnimator.cs" />
     <Compile Include="Assets\Scripts\HoldWeaponController.cs" />
     <Compile Include="Assets\Scripts\ParticleTerminator.cs" />
     <Compile Include="Assets\Scripts\PlayerActor.cs" />
+    <Compile Include="Assets\Scripts\PlayerAnimator.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Potato.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
@@ -79,6 +81,7 @@
     <Compile Include="Assets\Scripts\RoundManager.cs" />
     <Compile Include="Assets\Scripts\ShieldActor.cs" />
     <Compile Include="Assets\Scripts\SimpleWeaponController.cs" />
+    <Compile Include="Assets\Scripts\SpriteAnimator.cs" />
     <Compile Include="Assets\Scripts\Stamina.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerBar.cs" />
     <Compile Include="Assets\Scripts\WeaponController.cs" />

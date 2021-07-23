@@ -254,7 +254,7 @@ MonoBehaviour:
   firstName: {fileID: 1713051942}
   secondName: {fileID: 466812693}
   winnerName: {fileID: 186401974}
-  winMessage: Koniec gry!\n<b>{0} Wygrywa!</b>
+  winMessage: Koniec gry!\n<b>{0} wygrywa!</b>
 --- !u!114 &269513832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,6 +1121,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1623193455, guid: fb36755a17d03b840939b48bccb81ef5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 660436463792409900, guid: fb36755a17d03b840939b48bccb81ef5,
         type: 3}
       propertyPath: scheme

@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public bool isGrounded;
+    public bool isWalking;
     public Transform feet, root;
 
     public Rigidbody2D body;
@@ -14,35 +16,54 @@ public class PlayerController : MonoBehaviour
 
     ContactPoint2D[] contacts = new ContactPoint2D[1];
 
-    public Camera cam;
-
     public PlayerActor target;
 
     public ControlSchemeDealer controls;
+    public event Action<bool> OnWalkingChanged;
+    public event Action<bool> OnGroundChanged;
 
     void FixedUpdate()
     {
+        SetGround(body.GetContacts(contacts) > 0);
+
         if (!(Input.anyKey || Input.anyKeyDown))
+        {
+            SetWalking(false);
             return;
-
-        isGrounded = body.GetContacts(contacts) > 0;
-
-        bool move = true;
+        }
 
         PlayerActor.Direction direction = PlayerActor.Direction.NONE;
         if (Input.GetKey(controls.scheme.left))
         {
             direction = PlayerActor.Direction.LEFT;
             target.SetFlip(true);
+            SetWalking(true);
         }
         else if (Input.GetKey(controls.scheme.right))
         {
             direction = PlayerActor.Direction.RIGHT;
             target.SetFlip(false);
+            SetWalking(true);
         }
         else
-            move = false;
+            SetWalking(false);
         target.Move(direction, isGrounded, false);
+    }
+
+    void SetWalking(bool newWalkingState)
+    {
+        if (isWalking == newWalkingState)
+            return;
+        isWalking = newWalkingState;
+        OnWalkingChanged?.Invoke(isWalking);
+    }
+
+    void SetGround(bool newGroundState)
+    {
+        if (isGrounded == newGroundState)
+            return;
+        isGrounded = newGroundState;
+        OnGroundChanged?.Invoke(isGrounded);
     }
 
     private void Update()
@@ -52,13 +73,5 @@ public class PlayerController : MonoBehaviour
 
         if (body.velocity.y > maxJumpVelocity)
             body.velocity = new Vector2(body.velocity.x, maxJumpVelocity);
-
-        /*Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (feet.position.x > mousePos.x)
-            isFlipped = true;
-        else
-            isFlipped = false;*/
-
-        //target.SetFlip(isFlipped);
     }
 }
