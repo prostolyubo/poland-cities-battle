@@ -6,14 +6,18 @@ public class RoundManager : MonoBehaviour
     public GameObject gameOver;
     public PlayerActor first, second;
     public Text firstName, secondName, winnerName;
+    public Map map;
     public string winMessage;
+    public bool isIngame;
 
     [ContextMenu("Start")]
     public void StartRound()
     {
         firstName.text = first.displayName;
         secondName.text = second.displayName;
+        isIngame = true;
     }
+
     private void Awake()
     {
         PlayerActor.OnDamageTaken += HandleDamageTaken;
