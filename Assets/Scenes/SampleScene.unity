@@ -1562,6 +1562,36 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7099757250791771359, guid: f681bcd063f2c5344a6d628d6c9e2a56,
+        type: 3}
+      propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099757250791771359, guid: f681bcd063f2c5344a6d628d6c9e2a56,
+        type: 3}
+      propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099757250791771359, guid: f681bcd063f2c5344a6d628d6c9e2a56,
+        type: 3}
+      propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099757250791771359, guid: f681bcd063f2c5344a6d628d6c9e2a56,
+        type: 3}
+      propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 269513831}
+    - target: {fileID: 7099757250791771359, guid: f681bcd063f2c5344a6d628d6c9e2a56,
+        type: 3}
+      propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StartRound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099757250791771359, guid: f681bcd063f2c5344a6d628d6c9e2a56,
+        type: 3}
+      propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7903658825302765463, guid: f681bcd063f2c5344a6d628d6c9e2a56,
         type: 3}
       propertyPath: manager
