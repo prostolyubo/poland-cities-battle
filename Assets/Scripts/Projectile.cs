@@ -15,6 +15,7 @@ public class Projectile : MonoBehaviour
         Destroy(body);
         Destroy(GetComponent<Collider2D>());
         Destroy(GetComponent<SpriteRenderer>());
+        Destroy(GetComponent<SpriteAnimator>());
         particleTerminator.Terminate(() => Destroy(this.gameObject));
     }
 }

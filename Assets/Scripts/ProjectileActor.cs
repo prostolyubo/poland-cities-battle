@@ -36,6 +36,7 @@ namespace Assets
             fire = () =>
             {
                 GameObject projectile = Instantiate(prefab);
+                projectile.transform.localScale = flipReference.localScale;
                 projectile.transform.position = spawnPoint.position;
                 var direction = Quaternion.Euler(0, 0, flipReference.localScale.x > 0 ? angle : -angle);
                 var force = direction * (flipReference.localScale.x * spawnPoint.right) * shootForce;
