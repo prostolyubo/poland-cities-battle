@@ -12,6 +12,11 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (particleTerminator == null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
         Destroy(body);
         Destroy(GetComponent<Collider2D>());
         Destroy(GetComponent<SpriteRenderer>());
