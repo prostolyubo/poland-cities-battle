@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\GoatAnimator.cs" />
     <Compile Include="Assets\Scripts\HoldWeaponController.cs" />
     <Compile Include="Assets\Scripts\Map.cs" />
+    <Compile Include="Assets\Scripts\MusicHub.cs" />
     <Compile Include="Assets\Scripts\ParticleTerminator.cs" />
     <Compile Include="Assets\Scripts\PlayerActor.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimator.cs" />
