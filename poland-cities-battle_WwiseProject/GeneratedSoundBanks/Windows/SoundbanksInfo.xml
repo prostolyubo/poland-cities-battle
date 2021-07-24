@@ -11,11 +11,19 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="864881423" Language="SFX" Hash="2898493537">
+		<SoundBank Id="864881423" Language="SFX" Hash="54601658">
 			<ObjectPath>\SoundBanks\Default Work Unit\gra</ObjectPath>
 			<ShortName>gra</ShortName>
 			<Path>gra.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1180318187" Name="attack_sword" ObjectPath="\Events\Default Work Unit\attack_sword" DurationType="OneShot" DurationMin="0.091351" DurationMax="0.112012">
+					<IncludedMemoryFiles>
+						<File Id="745438630" Language="SFX">
+							<ShortName>attack_woosh.wav</ShortName>
+							<Path>SFX\attack_woosh_BC801EFC.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="417627684" Name="playmusic" ObjectPath="\Events\Default Work Unit\playmusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="688871164" Language="SFX">

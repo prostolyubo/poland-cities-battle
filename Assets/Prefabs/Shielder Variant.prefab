@@ -257,6 +257,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   isDealing: 0
+  knockback: 0
+  knockbackForce: 0
+  knockbackDirection: {x: 0, y: 0}
 --- !u!50 &6640942737424739358
 Rigidbody2D:
   serializedVersion: 4
@@ -326,6 +329,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls: {fileID: 660436463792409900}
   isPrimary: 1
+  Play_sound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fdb1c68f9530a4e4ba47c2047ec13c9b,
+      type: 2}
 --- !u!111 &1623193456
 Animation:
   m_ObjectHideFlags: 0
@@ -501,6 +509,7 @@ MonoBehaviour:
     frameTime: 0
     loop: 0
     passOn: 0
+  manualUpdate: 0
 --- !u!114 &8802118492815205643
 MonoBehaviour:
   m_ObjectHideFlags: 0

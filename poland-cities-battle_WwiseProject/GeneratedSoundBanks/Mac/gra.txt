@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	417627684	playmusic			\Default Work Unit\playmusic	
+	1180318187	attack_sword			\Default Work Unit\attack_sword	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	688871164	the gonk	G:\game jams\poland-cities-battle\poland-cities-battle_WwiseProject\.cache\Mac\SFX\the gonk_173CCC56.wem		\Interactive Music Hierarchy\Default Work Unit\map1\zakopane\the gonk		1783534
+	745438630	attack_woosh_nocolision	G:\game jams\poland-cities-battle\poland-cities-battle_WwiseProject\.cache\Mac\SFX\attack_woosh_BC801EFC.wem		\Actor-Mixer Hierarchy\Default Work Unit\attack_woosh_nocolision		1755
 
