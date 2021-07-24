@@ -31,36 +31,48 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 7a9e685d65a14904582de262dc6843f3, type: 3}
-    totalSpriteSurfaceArea: 854802
+    totalSpriteSurfaceArea: 874575
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: fe5f2903672899e4d9dd03f224061403, type: 3}
   - {fileID: 21300000, guid: bac5a8435f5626847816518a7bf8e5dd, type: 3}
   - {fileID: 21300000, guid: 9d663f74a9c5d364c9626c4761bade8d, type: 3}
+  - {fileID: 21300000, guid: 2be24494945425b4bafb42dc5cebb611, type: 3}
+  - {fileID: 21300000, guid: 07b303e48195bdf4ea5e55219200336f, type: 3}
+  - {fileID: 21300000, guid: 2eebd105d90cbdb41a94022f7b42e403, type: 3}
   - {fileID: 21300000, guid: 5ac0ab55ab8ab4e499df0646524c83b0, type: 3}
   - {fileID: 21300000, guid: 36abf5c688fc6724f8ce45f4a6f65ddb, type: 3}
   - {fileID: 21300000, guid: d9e43ae6310f4bb4cb9c215190eb1a6d, type: 3}
   - {fileID: 21300000, guid: 120ff017ce1c9114aab23b1a2e25f7c0, type: 3}
+  - {fileID: 21300000, guid: 1faf017709bc10749b46fdfdc144fd67, type: 3}
   - {fileID: 21300000, guid: 95b3fd69e71b74549bdcfdaf4c730a7c, type: 3}
   - {fileID: 21300000, guid: 74c7d67b2deeea24293c6881361f3072, type: 3}
+  - {fileID: 21300000, guid: f74b35cb8506dcb48b14e0b5dcf9e35d, type: 3}
   - {fileID: 21300000, guid: 7a783e0c81490174aa3fcd465bda98fb, type: 3}
   - {fileID: 21300000, guid: fe39c6cc5a908b840868fad34b0f5ec6, type: 3}
   - {fileID: 21300000, guid: bc4608cdfa28e9648a49db0137d1a8d4, type: 3}
   - {fileID: 21300000, guid: d9fd9d2f98ea37645851c4107f84cca3, type: 3}
+  - {fileID: 21300000, guid: 32013dafd0fff73449c040089fa24a7c, type: 3}
   m_PackedSpriteNamesToIndex:
   - Drragon_attack_5
   - Dragon_top
   - Dragon_walk_2
+  - Fireball_particle_C
+  - Fireball_1
+  - Fireball_3
   - Dragon_walk_3
   - Drragon_attack_3
   - Drragon_attack_4
   - Dragon_jump
+  - Fireball_particle_B
   - Dragon_Fireball_2
   - Dragon_walk_1
+  - Fireball_2
   - Drragon_attack_1
   - Drragon_attack_2
   - Dragon_tail
   - Dragon_Fireball_1
+  - Fireball_particle_A
   m_Tag: DragonAtlas
   m_IsVariant: 0
