@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c20837d617560243a0d1caf6e7602733
     GuidInternal: 
-    m_lastTime: -8585744880087429077
-    List: []
+    m_lastTime: -8585744834661286563
+    List:
+    - name: gra
+      guid: ad42783df205b84a9ef7b08e9cdf8e25
+      id: 864881423
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c20837d617560243a0d1caf6e7602733
+      - ElementName: gra
+        ObjectType: 7
+        guid: ad42783df205b84a9ef7b08e9cdf8e25
+      Path: SoundBanks\Default Work Unit\gra
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b7a487ffaab5ce43acb299ae17efc50b
     GuidInternal: 
-    m_lastTime: -8585744880087270351
-    List: []
+    m_lastTime: -8585744834661043491
+    List:
+    - name: playmusic
+      guid: 7c62313c7f66544faa2cd481d9022dda
+      id: 417627684
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b7a487ffaab5ce43acb299ae17efc50b
+      - ElementName: playmusic
+        ObjectType: 3
+        guid: 7c62313c7f66544faa2cd481d9022dda
+      Path: Events\Default Work Unit\playmusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
