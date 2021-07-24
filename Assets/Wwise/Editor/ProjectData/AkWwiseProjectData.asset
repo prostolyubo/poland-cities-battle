@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c20837d617560243a0d1caf6e7602733
     GuidInternal: 
-    m_lastTime: -8585744834661286563
+    m_lastTime: -8585744700513867095
     List:
     - name: gra
       guid: ad42783df205b84a9ef7b08e9cdf8e25
@@ -94,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b7a487ffaab5ce43acb299ae17efc50b
     GuidInternal: 
-    m_lastTime: -8585744834661043491
+    m_lastTime: -8585744691672015605
     List:
+    - name: attack_goat
+      guid: 29bf291163ae4e468076d15e0172788f
+      id: 2652110577
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b7a487ffaab5ce43acb299ae17efc50b
+      - ElementName: attack_goat
+        ObjectType: 3
+        guid: 29bf291163ae4e468076d15e0172788f
+      Path: Events\Default Work Unit\attack_goat
+      maxAttenuation: 0
+      maxDuration: 0.529212
+      minDuration: 0.484729
+    - name: attack_sword
+      guid: e6dc104d20fdb0488ff3142d08352359
+      id: 1180318187
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b7a487ffaab5ce43acb299ae17efc50b
+      - ElementName: attack_sword
+        ObjectType: 3
+        guid: e6dc104d20fdb0488ff3142d08352359
+      Path: Events\Default Work Unit\attack_sword
+      maxAttenuation: 0
+      maxDuration: 0.396731
+      minDuration: 0.385437
     - name: playmusic
       guid: 7c62313c7f66544faa2cd481d9022dda
       id: 417627684

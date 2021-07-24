@@ -1,6 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{198C264F-90BA-4A39-BB9F-078B2DBDF9C1}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{198C264F-90BA-4A39-BB9F-078B2DBDF9C1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{198C264F-90BA-4A39-BB9F-078B2DBDF9C1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="sirene_attack" ID="{816C1682-F5A0-4B25-B0BB-5CF3814C002F}" ShortID="457206144">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{DC9D7BD9-FDB6-4579-A287-6C5BA0979CF8}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="18"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{BB2BF88A-A1EE-4A97-BDF6-229627DCAC37}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="12"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1D0D490B-3C3A-4D1F-BDED-3C125F8A963B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="25"/>
+											<Property Name="Min" Type="Real64" Value="-25"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{8653D7B0-C43B-4499-B557-76679F720AFB}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="4"/>
+											<Property Name="Min" Type="Real64" Value="-7"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9F90A6F-48D6-443A-91DF-3944FA68A973}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E04F274-5F85-4078-89C3-FD59CAFD0F05}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="siren_attack" ID="{35739DFF-4B68-4709-9006-7A03F1908F7D}">
+							<Language>SFX</Language>
+							<AudioFile>siren_attack.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="114560547"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="siren_attack" ID="{35739DFF-4B68-4709-9006-7A03F1908F7D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="goat_attack" ID="{F7180D9A-0EE5-443F-B1D9-FC5550DAD58D}" ShortID="488916751">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>29</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-50</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{54FC0713-F1A2-43BE-8C3E-8501AC929B82}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="76"/>
+											<Property Name="Min" Type="Real64" Value="-76"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9F90A6F-48D6-443A-91DF-3944FA68A973}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E04F274-5F85-4078-89C3-FD59CAFD0F05}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="goat_attack-002" ID="{BB95558F-9EF3-449F-95ED-0DAA7152995B}">
+							<Language>SFX</Language>
+							<AudioFile>goat_attack-002.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="132827051"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="goat_attack-002" ID="{BB95558F-9EF3-449F-95ED-0DAA7152995B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

@@ -11,16 +11,24 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="864881423" Language="SFX" Hash="54601658">
+		<SoundBank Id="864881423" Language="SFX" Hash="4171098970">
 			<ObjectPath>\SoundBanks\Default Work Unit\gra</ObjectPath>
 			<ShortName>gra</ShortName>
 			<Path>gra.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1180318187" Name="attack_sword" ObjectPath="\Events\Default Work Unit\attack_sword" DurationType="OneShot" DurationMin="0.091351" DurationMax="0.112012">
+				<Event Id="2652110577" Name="attack_goat" ObjectPath="\Events\Default Work Unit\attack_goat" DurationType="OneShot" DurationMin="0.484729" DurationMax="0.529212">
 					<IncludedMemoryFiles>
-						<File Id="745438630" Language="SFX">
-							<ShortName>attack_woosh.wav</ShortName>
-							<Path>SFX\attack_woosh_BC801EFC.wem</Path>
+						<File Id="132827051" Language="SFX">
+							<ShortName>goat_attack-002.wav</ShortName>
+							<Path>SFX\goat_attack-002_BC801EFC.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1180318187" Name="attack_sword" ObjectPath="\Events\Default Work Unit\attack_sword" DurationType="OneShot" DurationMin="0.385437" DurationMax="0.396731">
+					<IncludedMemoryFiles>
+						<File Id="114560547" Language="SFX">
+							<ShortName>siren_attack.wav</ShortName>
+							<Path>SFX\siren_attack_BC801EFC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

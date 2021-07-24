@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ATTACK_GOAT = 2652110577U;
         static const AkUniqueID ATTACK_SWORD = 1180318187U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
     } // namespace EVENTS

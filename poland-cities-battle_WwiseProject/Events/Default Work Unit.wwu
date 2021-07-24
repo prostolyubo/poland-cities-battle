@@ -14,6 +14,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="attack_sword" ID="{4D10DCE6-FD20-48B0-8FF3-142D08352359}">
+					<ChildrenList>
+						<Action Name="" ID="{7ED17F7B-3EED-4092-8947-4709D8DDBE85}" ShortID="107263436">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sirene_attack" ID="{816C1682-F5A0-4B25-B0BB-5CF3814C002F}" WorkUnitID="{198C264F-90BA-4A39-BB9F-078B2DBDF9C1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="attack_goat" ID="{1129BF29-AE63-464E-8076-D15E0172788F}">
+					<ChildrenList>
+						<Action Name="" ID="{8C1E1BA7-0995-4FCB-9CD4-58A05A9ECE83}" ShortID="17143185">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="goat_attack" ID="{F7180D9A-0EE5-443F-B1D9-FC5550DAD58D}" WorkUnitID="{198C264F-90BA-4A39-BB9F-078B2DBDF9C1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
