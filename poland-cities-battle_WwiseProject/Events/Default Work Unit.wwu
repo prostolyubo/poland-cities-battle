@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="shield_sirene" ID="{2EB63054-3A0A-4169-BBFD-EF0CB45642B2}">
+					<ChildrenList>
+						<Action Name="" ID="{2219B913-35B2-4339-A55D-D89AB27DCC49}" ShortID="610338123">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sirene_shield" ID="{13FA1AF5-3B6D-4F8E-9F4C-BDE892D1D3DB}" WorkUnitID="{198C264F-90BA-4A39-BB9F-078B2DBDF9C1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

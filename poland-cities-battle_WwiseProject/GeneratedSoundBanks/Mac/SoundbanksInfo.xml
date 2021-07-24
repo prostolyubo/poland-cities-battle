@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="864881423" Language="SFX" Hash="4125920483">
+		<SoundBank Id="864881423" Language="SFX" Hash="3474147206">
 			<ObjectPath>\SoundBanks\Default Work Unit\gra</ObjectPath>
 			<ShortName>gra</ShortName>
 			<Path>gra.bnk</Path>
@@ -45,6 +45,14 @@
 						<File Id="464248442" Language="SFX">
 							<ShortName>muz1-001.wav</ShortName>
 							<Path>SFX\muz1-001_173CCC56.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2346919513" Name="shield_sirene" ObjectPath="\Events\Default Work Unit\shield_sirene" DurationType="OneShot" DurationMin="0.373810" DurationMax="0.373810">
+					<IncludedMemoryFiles>
+						<File Id="866613795" Language="SFX">
+							<ShortName>shield_sirene.wav</ShortName>
+							<Path>SFX\shield_sirene_BC801EFC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

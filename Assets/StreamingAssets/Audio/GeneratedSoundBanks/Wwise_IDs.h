@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID ATTACK_SWORD = 1180318187U;
         static const AkUniqueID DRAGON_ATTACK = 482261039U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
+        static const AkUniqueID SHIELD_SIRENE = 2346919513U;
     } // namespace EVENTS
 
     namespace BANKS

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c20837d617560243a0d1caf6e7602733
     GuidInternal: 
-    m_lastTime: -8585744680070731126
+    m_lastTime: -8585744515911192943
     List:
     - name: gra
       guid: ad42783df205b84a9ef7b08e9cdf8e25
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b7a487ffaab5ce43acb299ae17efc50b
     GuidInternal: 
-    m_lastTime: -8585744680070681529
+    m_lastTime: -8585744515911232620
     List:
     - name: attack_goat
       guid: 29bf291163ae4e468076d15e0172788f
@@ -164,6 +164,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: shield_sirene
+      guid: 5430b62e0a3a6941bbfdef0cb45642b2
+      id: 2346919513
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b7a487ffaab5ce43acb299ae17efc50b
+      - ElementName: shield_sirene
+        ObjectType: 3
+        guid: 5430b62e0a3a6941bbfdef0cb45642b2
+      Path: Events\Default Work Unit\shield_sirene
+      maxAttenuation: 0
+      maxDuration: 0.37381
+      minDuration: 0.37381
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

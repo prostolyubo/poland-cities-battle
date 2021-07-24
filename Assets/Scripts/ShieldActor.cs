@@ -11,6 +11,7 @@ public class ShieldActor : MonoBehaviour
     public Animation animator;
     bool isReversed;
     bool isShielding;
+    public AK.Wwise.Event Play_sound;
 
     private void Awake()
     {
@@ -43,6 +44,7 @@ public class ShieldActor : MonoBehaviour
         {
             stamina.CurrentStamina = 0;
             HandleDisengage();
+            
         }
     }
 
@@ -74,5 +76,9 @@ public class ShieldActor : MonoBehaviour
     {
         callback?.Invoke();
         callback = null;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Play_sound.Post(gameObject);
     }
 }

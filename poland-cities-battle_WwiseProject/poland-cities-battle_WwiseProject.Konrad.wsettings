@@ -6,6 +6,7 @@
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Konrad\Downloads\"/>
 				<Property Name="Event Action List\{0E11CE10-C74B-411D-9836-BB3BF8713665}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1129BF29-AE63-464E-8076-D15E0172788F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2EB63054-3A0A-4169-BBFD-EF0CB45642B2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3C31627C-667F-4F54-AA2C-D481D9022DDA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4D10DCE6-FD20-48B0-8FF3-142D08352359}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
@@ -25,7 +26,7 @@
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="UJSyrmd7PUqn8JwX8T4wfwH+rv7/////2t/jPouD70ekJylwmTG72QH+rv7/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="2t/jPouD70ekJylwmTG72QH+IUj/////UJSyrmd7PUqn8JwX8T4wfwH+IUj/////"/>
 				<Property Name="Interactive Music\x64_{018D8ECB-9BAD-45FF-97B6-3F9852023667} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAwG9AAAAAAAAA8D8AAAAAQPjqQAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{04422C3E-93E6-441D-AB55-742CB10B313C} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAwG9AAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{5AA40AD8-5BA5-4A05-99BA-74377BD19E41} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAA2G9AAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>

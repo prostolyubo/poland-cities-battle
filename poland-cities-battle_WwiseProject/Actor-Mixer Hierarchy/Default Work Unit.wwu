@@ -164,6 +164,29 @@
 						<ActiveSource Name="dragon_attack" ID="{1A21A5C3-189D-4FB8-8604-8C6486BFFCC9}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="sirene_shield" ID="{13FA1AF5-3B6D-4F8E-9F4C-BDE892D1D3DB}" ShortID="656673404">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9F90A6F-48D6-443A-91DF-3944FA68A973}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E04F274-5F85-4078-89C3-FD59CAFD0F05}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="shield_sirene" ID="{EEC8837F-D729-4BBF-8AE1-AF700640E90B}">
+							<Language>SFX</Language>
+							<AudioFile>shield_sirene.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="866613795"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="shield_sirene" ID="{EEC8837F-D729-4BBF-8AE1-AF700640E90B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

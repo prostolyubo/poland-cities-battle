@@ -6,6 +6,7 @@
 				<SoundBank Name="gra" ID="{3D7842AD-05F2-4AB8-9EF7-B08E9CDF8E25}">
 					<ObjectInclusionList>
 						<ObjectRef Name="dragon_attack" ID="{0E11CE10-C74B-411D-9836-BB3BF8713665}" WorkUnitID="{FF87A4B7-B5AA-43CE-ACB2-99AE17EFC50B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="shield_sirene" ID="{2EB63054-3A0A-4169-BBFD-EF0CB45642B2}" WorkUnitID="{FF87A4B7-B5AA-43CE-ACB2-99AE17EFC50B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Interactive Music Hierarchy" ID="{49FED366-B530-42A8-993B-924873AAB707}" WorkUnitID="{49FED366-B530-42A8-993B-924873AAB707}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="attack_goat" ID="{1129BF29-AE63-464E-8076-D15E0172788F}" WorkUnitID="{FF87A4B7-B5AA-43CE-ACB2-99AE17EFC50B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="attack_sword" ID="{4D10DCE6-FD20-48B0-8FF3-142D08352359}" WorkUnitID="{FF87A4B7-B5AA-43CE-ACB2-99AE17EFC50B}" Origin="Manual" Filter="7"/>
