@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 091edd4b99691334e8ec480f068fb865, type: 3}
+  m_Name: 0E11CE10-C74B-411D-9836-BB3BF8713665
+  m_EditorClassIdentifier: 
+  objectName: dragon_attack
+  id: 482261039
+  guid: 0E11CE10-C74B-411D-9836-BB3BF8713665

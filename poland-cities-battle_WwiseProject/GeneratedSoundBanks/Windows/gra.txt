@@ -1,10 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	417627684	playmusic			\Default Work Unit\playmusic	
+	482261039	dragon_attack			\Default Work Unit\dragon_attack	
 	1180318187	attack_sword			\Default Work Unit\attack_sword	
 	2652110577	attack_goat			\Default Work Unit\attack_goat	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	114560547	sirene_attack	G:\game jams\poland-cities-battle\poland-cities-battle_WwiseProject\.cache\Windows\SFX\siren_attack_BC801EFC.wem		\Actor-Mixer Hierarchy\Default Work Unit\sirene_attack		4527
 	132827051	goat_attack	G:\game jams\poland-cities-battle\poland-cities-battle_WwiseProject\.cache\Windows\SFX\goat_attack-002_BC801EFC.wem		\Actor-Mixer Hierarchy\Default Work Unit\goat_attack		3389
+	311653009	dragon_attack	G:\game jams\poland-cities-battle\poland-cities-battle_WwiseProject\.cache\Windows\SFX\dragon_attack_BC801EFC.wem		\Actor-Mixer Hierarchy\Default Work Unit\dragon_attack		7680
 	688871164	the gonk	G:\game jams\poland-cities-battle\poland-cities-battle_WwiseProject\.cache\Windows\SFX\the gonk_173CCC56.wem		\Interactive Music Hierarchy\Default Work Unit\map1\zakopane\the gonk		1783534
 

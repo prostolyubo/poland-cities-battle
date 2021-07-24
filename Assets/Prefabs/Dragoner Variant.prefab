@@ -513,6 +513,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls: {fileID: 4977756327696349521}
   isPrimary: 0
+  Play_sound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &3181412602130467510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,6 +735,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls: {fileID: 4977756327696349521}
   isPrimary: 1
+  Play_sound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d7f57acf2fc6a534ebcfcc5b9fb8b066,
+      type: 2}
 --- !u!111 &247593975333133340
 Animation:
   m_ObjectHideFlags: 0

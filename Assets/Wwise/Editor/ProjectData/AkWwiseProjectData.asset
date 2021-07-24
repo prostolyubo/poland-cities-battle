@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c20837d617560243a0d1caf6e7602733
     GuidInternal: 
-    m_lastTime: -8585744700513867095
+    m_lastTime: -8585744680070731126
     List:
     - name: gra
       guid: ad42783df205b84a9ef7b08e9cdf8e25
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b7a487ffaab5ce43acb299ae17efc50b
     GuidInternal: 
-    m_lastTime: -8585744691672015605
+    m_lastTime: -8585744680070681529
     List:
     - name: attack_goat
       guid: 29bf291163ae4e468076d15e0172788f
@@ -130,6 +130,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.396731
       minDuration: 0.385437
+    - name: dragon_attack
+      guid: 10ce110e4bc71d419836bb3bf8713665
+      id: 482261039
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b7a487ffaab5ce43acb299ae17efc50b
+      - ElementName: dragon_attack
+        ObjectType: 3
+        guid: 10ce110e4bc71d419836bb3bf8713665
+      Path: Events\Default Work Unit\dragon_attack
+      maxAttenuation: 0
+      maxDuration: 0.845167
+      minDuration: 0.763029
     - name: playmusic
       guid: 7c62313c7f66544faa2cd481d9022dda
       id: 417627684

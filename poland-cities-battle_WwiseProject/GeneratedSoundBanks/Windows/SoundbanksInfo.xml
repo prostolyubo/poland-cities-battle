@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="864881423" Language="SFX" Hash="4171098970">
+		<SoundBank Id="864881423" Language="SFX" Hash="774995251">
 			<ObjectPath>\SoundBanks\Default Work Unit\gra</ObjectPath>
 			<ShortName>gra</ShortName>
 			<Path>gra.bnk</Path>
@@ -29,6 +29,14 @@
 						<File Id="114560547" Language="SFX">
 							<ShortName>siren_attack.wav</ShortName>
 							<Path>SFX\siren_attack_BC801EFC.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="482261039" Name="dragon_attack" ObjectPath="\Events\Default Work Unit\dragon_attack" DurationType="OneShot" DurationMin="0.763029" DurationMax="0.845167">
+					<IncludedMemoryFiles>
+						<File Id="311653009" Language="SFX">
+							<ShortName>dragon_attack.wav</ShortName>
+							<Path>SFX\dragon_attack_BC801EFC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
