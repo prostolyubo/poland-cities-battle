@@ -259,6 +259,12 @@ PrefabInstance:
       propertyPath: m_Group
       value: 
       objectReference: {fileID: 3295285818640402018}
+    - target: {fileID: 7388523583386643525, guid: 39edf2ac9781ae54aa77eb21e8f9e4eb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 95b3fd69e71b74549bdcfdaf4c730a7c,
+        type: 3}
     - target: {fileID: 7460863359164001307, guid: 39edf2ac9781ae54aa77eb21e8f9e4eb,
         type: 3}
       propertyPath: m_Enabled
@@ -341,6 +347,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8962177750336518730, guid: 39edf2ac9781ae54aa77eb21e8f9e4eb,
+        type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 2172728225143563057, guid: b00695132a65ac54284cdc4fdc424290,
+        type: 3}
     - target: {fileID: 9032078902369498088, guid: 39edf2ac9781ae54aa77eb21e8f9e4eb,
         type: 3}
       propertyPath: m_ChildControlWidth

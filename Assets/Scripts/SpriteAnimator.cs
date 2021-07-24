@@ -12,6 +12,13 @@ public class SpriteAnimator : MonoBehaviour
     int stateId;
     int frame;
     float lapsed;
+    public bool manualUpdate;
+
+    public void SetFirstState()
+    {
+        SetState(1, 0);
+    }
+
     public void SetState(int state, int startFrame = 0)
     {
         lapsed = 0;
@@ -20,13 +27,8 @@ public class SpriteAnimator : MonoBehaviour
         enabled = true;
     }
 
-    public void Update()
+    public void Step()
     {
-        while (lapsed > 0)
-        {
-            lapsed -= Time.deltaTime;
-            return;
-        }
         var state = states[stateId];
         int relativeFrame = frame % state.sprites.Count;
         target.sprite = state.sprites[relativeFrame];
@@ -37,11 +39,24 @@ public class SpriteAnimator : MonoBehaviour
             SetState(++stateId % states.Count, 0);
             return;
         }
-        else
+        else if (!manualUpdate)
         {
             enabled = state.loop || relativeFrame < state.sprites.Count - 1;
         }
         frame++;
+    }
+
+    public void Update()
+    {
+        if (manualUpdate)
+            return;
+
+        while (lapsed > 0)
+        {
+            lapsed -= Time.deltaTime;
+            return;
+        }
+        Step();
     }
 
     [Serializable]

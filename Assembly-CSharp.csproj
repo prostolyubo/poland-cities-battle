@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\RoundManager.cs" />
     <Compile Include="Assets\Scripts\ShieldActor.cs" />
     <Compile Include="Assets\Scripts\SimpleWeaponController.cs" />
+    <Compile Include="Assets\Scripts\SoundHub.cs" />
     <Compile Include="Assets\Scripts\SpriteAnimator.cs" />
     <Compile Include="Assets\Scripts\Stamina.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterSelector.cs" />

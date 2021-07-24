@@ -15,7 +15,8 @@ public class BladeActor : MonoBehaviour
     private void Awake()
     {
         controller.OnUseTriggered += HandleUse;
-        dealer.OnHit += HandleHit;
+        if (dealer != null)
+            dealer.OnHit += HandleHit;
     }
 
     private void HandleHit()
@@ -34,7 +35,8 @@ public class BladeActor : MonoBehaviour
     {
         this.callback = callback;
         animator.Play();
-        dealer.isDealing = true;
+        if (dealer != null)
+            dealer.isDealing = true;
     }
 
     public void AnimationStart()
@@ -51,6 +53,7 @@ public class BladeActor : MonoBehaviour
     {
         callback?.Invoke();
         callback = null;
-        dealer.isDealing = false;
+        if (dealer != null)
+            dealer.isDealing = false;
     }
 }

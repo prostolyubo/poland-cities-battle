@@ -26,6 +26,12 @@ public class PlayerActor : MonoBehaviour
         RIGHT
     }
 
+    internal void Knockback(float knockbackForce, Vector2 knockbackDirection)
+    {
+        knockbackDirection.Scale(root.localScale);
+        target.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+    }
+
     private void Awake()
     {
         stamina.OnStaminaChanged += (float _) => OnStaminaChanged?.Invoke(this);
