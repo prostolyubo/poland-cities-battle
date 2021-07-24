@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>G:\game jams\poland-cities-battle\poland-cities-battle_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>G:\game jams\poland-cities-battle\poland-cities-battle_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>G:\game jams\poland-cities-battle\poland-cities-battle_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>G:\game jams\poland-cities-battle\poland-cities-battle_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="864881423" Language="SFX" Hash="1569939590">
+			<ObjectPath>\SoundBanks\Default Work Unit\gra</ObjectPath>
+			<ShortName>gra</ShortName>
+			<Path>gra.bnk</Path>
+			<IncludedEvents>
+				<Event Id="417627684" Name="playmusic" ObjectPath="\Events\Default Work Unit\playmusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="688871164" Language="SFX">
+							<ShortName>the gonk.wav</ShortName>
+							<Path>SFX\the gonk_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="688871164" Language="SFX">
+					<ShortName>the gonk.wav</ShortName>
+					<Path>SFX\the gonk_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -149,11 +149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 0
+  isWalking: 0
   feet: {fileID: 3282343510465724996}
   root: {fileID: 3282343510465724996}
   body: {fileID: 3282343510465724994}
   maxJumpVelocity: 5
-  cam: {fileID: 0}
   target: {fileID: 3282343510465724992}
   controls: {fileID: 8556458614623098912}
 --- !u!114 &3282343510465724992

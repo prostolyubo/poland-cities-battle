@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	417627684	playmusic			\Default Work Unit\playmusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	688871164	the gonk	G:\game jams\poland-cities-battle\poland-cities-battle_WwiseProject\.cache\Windows\SFX\the gonk_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\map1\zakopane\the gonk		41769096
+

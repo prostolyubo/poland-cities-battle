@@ -276,6 +276,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7130849159631202456, guid: 953c414b359f9b84ab567e361ba6cd55,
+        type: 3}
+      propertyPath: isEnvironmentAware
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3282343510465724996, guid: 953c414b359f9b84ab567e361ba6cd55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -334,9 +339,16 @@ PrefabInstance:
     - target: {fileID: 3282343510465724998, guid: 953c414b359f9b84ab567e361ba6cd55,
         type: 3}
       propertyPath: m_Name
-      value: Warrior
+      value: Warrior Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8101482773545624690, guid: 953c414b359f9b84ab567e361ba6cd55,
+        type: 3}
+      propertyPath: isEnvironmentAware
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 285803741543186283, guid: 953c414b359f9b84ab567e361ba6cd55, type: 3}
+    - {fileID: -7130849159631202456, guid: 953c414b359f9b84ab567e361ba6cd55, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 953c414b359f9b84ab567e361ba6cd55, type: 3}
 --- !u!4 &7856891532772822362 stripped
 Transform:
