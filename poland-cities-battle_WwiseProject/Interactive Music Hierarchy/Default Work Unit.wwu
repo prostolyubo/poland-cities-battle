@@ -84,23 +84,23 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="the gonk" ID="{58DF3599-71C8-4171-A2B5-A71EC65211E4}" ShortID="102465058">
+								<MusicTrack Name="muz1-001" ID="{1F459B0B-537E-456B-B287-B0AEA72DA032}" ShortID="712394060">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E04F274-5F85-4078-89C3-FD59CAFD0F05}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="the gonk" ID="{4A6BD5AF-8FCD-42BF-9F43-A10ECD4F0A75}">
+										<AudioFileSource Name="muz1-001" ID="{5033262F-846F-43F7-9EC3-D1881A17D243}">
 											<Language>SFX</Language>
-											<AudioFile>the gonk.wav</AudioFile>
+											<AudioFile>muz1-001.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="688871164"/>
+												<MediaID ID="464248442"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{1B58B4BB-2901-4580-A385-24835EEA58AC}">
+										<MusicTransition Name="Root" ID="{A5AAB551-7870-439A-8D45-18F8D2C426A6}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -111,39 +111,18 @@
 										<ObjectList Name="Sequences">
 											<Reference>
 												<Local>
-													<MusicTrackSequence Name="" ID="{0E9D0666-6192-45B9-8313-B030D4B9F4E1}">
+													<MusicTrackSequence Name="" ID="{DE7FF67E-5030-4D9D-8C95-07C95B6BE273}">
 														<ObjectLists>
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="the gonk" ID="{D549B5FE-B6C4-435C-8D88-7C609F565425}">
+																		<MusicClip Name="muz1-001" ID="{135D9B82-C530-4BA7-A8CE-AC1909D53EBE}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="217547.041666667"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="50086.9614512472"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																				<Property Name="PlayAt" Type="Real64" Value="1141.73228346457"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="the gonk" ID="{4A6BD5AF-8FCD-42BF-9F43-A10ECD4F0A75}"/>
-																			<PropertyCurveList>
-																				<PropertyCurve PropertyName="Lowpass">
-																					<Curve Name="" ID="{65099E99-BAED-42AE-9330-5B2E56F8D0D9}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>217.547041666667</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</PropertyCurve>
-																			</PropertyCurveList>
+																			<AudioSourceRef Name="muz1-001" ID="{5033262F-846F-43F7-9EC3-D1881A17D243}"/>
 																		</MusicClip>
 																	</Local>
 																</Reference>

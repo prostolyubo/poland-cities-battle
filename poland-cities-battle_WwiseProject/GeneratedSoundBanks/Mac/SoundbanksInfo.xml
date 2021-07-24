@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="864881423" Language="SFX" Hash="774995251">
+		<SoundBank Id="864881423" Language="SFX" Hash="4125920483">
 			<ObjectPath>\SoundBanks\Default Work Unit\gra</ObjectPath>
 			<ShortName>gra</ShortName>
 			<Path>gra.bnk</Path>
@@ -42,17 +42,17 @@
 				</Event>
 				<Event Id="417627684" Name="playmusic" ObjectPath="\Events\Default Work Unit\playmusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="688871164" Language="SFX">
-							<ShortName>the gonk.wav</ShortName>
-							<Path>SFX\the gonk_173CCC56.wem</Path>
+						<File Id="464248442" Language="SFX">
+							<ShortName>muz1-001.wav</ShortName>
+							<Path>SFX\muz1-001_173CCC56.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="688871164" Language="SFX">
-					<ShortName>the gonk.wav</ShortName>
-					<Path>SFX\the gonk_173CCC56.wem</Path>
+				<File Id="464248442" Language="SFX">
+					<ShortName>muz1-001.wav</ShortName>
+					<Path>SFX\muz1-001_173CCC56.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
