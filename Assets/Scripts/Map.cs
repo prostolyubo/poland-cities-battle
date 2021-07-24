@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Map : MonoBehaviour
 {
-    public Transform leftBound, rightBound, lowerBound;
+    public Transform leftBound, rightBound, lowerBound, spawn1, spawn2;
 }
