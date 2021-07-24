@@ -10,7 +10,6 @@ public class CharacterSelector : MonoBehaviour
     public Toggle toggle;
     public RoundManager manager;
     public PlayerActor prefab;
-    public Text name;
     public Text legend;
     public TextAsset legends;
 
@@ -21,11 +20,9 @@ public class CharacterSelector : MonoBehaviour
         if (prefab == null)
         {
             toggle.interactable = false;
-            name.text = "PLACEHOLDER";
             return;
         }
         toggle.onValueChanged.AddListener(HandleCharacterSelected);
-        name.text = prefab.displayName;
         characterLegend = GetCharacterLegend();
         if (toggle.isOn)
             legend.text = characterLegend;
