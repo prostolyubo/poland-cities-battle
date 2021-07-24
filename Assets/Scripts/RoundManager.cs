@@ -10,10 +10,12 @@ public class RoundManager : MonoBehaviour
     public ControlScheme firstScheme, secondScheme;
     public string winMessage;
     public bool isIngame;
+    public Map[] maps;
 
     [ContextMenu("Start")]
     public void StartRound()
     {
+        map = Instantiate(maps[UnityEngine.Random.Range(0, maps.Length)]);
         first = Instantiate(first, map.spawn1.position, Quaternion.identity, null);
         second = Instantiate(second, map.spawn2.position, Quaternion.identity, null);
         first.GetComponent<ControlSchemeDealer>().scheme = firstScheme;
