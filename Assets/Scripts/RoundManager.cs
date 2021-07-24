@@ -7,12 +7,17 @@ public class RoundManager : MonoBehaviour
     public PlayerActor first, second;
     public Text firstName, secondName, winnerName;
     public Map map;
+    public ControlScheme firstScheme, secondScheme;
     public string winMessage;
     public bool isIngame;
 
     [ContextMenu("Start")]
     public void StartRound()
     {
+        first = Instantiate(first, map.spawn1.position, Quaternion.identity, null);
+        second = Instantiate(second, map.spawn2.position, Quaternion.identity, null);
+        first.GetComponent<ControlSchemeDealer>().scheme = firstScheme;
+        second.GetComponent<ControlSchemeDealer>().scheme = secondScheme;
         firstName.text = first.displayName;
         secondName.text = second.displayName;
         isIngame = true;

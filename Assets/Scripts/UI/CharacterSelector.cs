@@ -36,11 +36,11 @@ public class CharacterSelector : MonoBehaviour
         if (!isSelected)
             return;
 
-        /*if (isFirst)
+        if (isFirst)
             manager.first = prefab;
         else
             manager.second = prefab;
-*/
+
         legend.text = characterLegend;
     }
 
