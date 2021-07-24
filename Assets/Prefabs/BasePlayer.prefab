@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 3282343510465724992}
   - component: {fileID: 1770023572379595730}
   - component: {fileID: 8556458614623098912}
+  - component: {fileID: 1271862119807845124}
   m_Layer: 0
   m_Name: BasePlayer
   m_TagString: Untagged
@@ -149,11 +150,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 0
+  isWalking: 0
   feet: {fileID: 3282343510465724996}
   root: {fileID: 3282343510465724996}
   body: {fileID: 3282343510465724994}
   maxJumpVelocity: 5
-  cam: {fileID: 0}
   target: {fileID: 3282343510465724992}
   controls: {fileID: 8556458614623098912}
 --- !u!114 &3282343510465724992
@@ -206,6 +207,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scheme: {fileID: 0}
+--- !u!114 &1271862119807845124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3282343510465724998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705cfdfd1e0c6c04fbc9b84ace78cd9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPlayerJumped:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerHit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerDefeated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerVictorious:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3282343510907783365
 GameObject:
   m_ObjectHideFlags: 0
