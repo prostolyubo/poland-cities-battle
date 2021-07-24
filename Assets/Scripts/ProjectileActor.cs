@@ -44,8 +44,8 @@ namespace Assets
             };
             if (!waitForSignal)
                 Fire();
-            else
-                signaller?.Play();
+
+            signaller?.Play();
         }
 
         private void Shoot(Action obj)

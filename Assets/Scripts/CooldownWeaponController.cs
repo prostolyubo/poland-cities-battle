@@ -4,18 +4,28 @@ using UnityEngine;
 public class CooldownWeaponController : WeaponController
 {
     public float cooldown;
-    private IEnumerator Start()
-    {
-        yield return ProjectileCycleRoutine();
-    }
 
-    private IEnumerator ProjectileCycleRoutine()
+    bool triggered;
+    float left;
+
+    private void Update()
     {
-        while (!Input.GetKeyDown(ActionKeyCode))
-            yield return null;
-        Use();
-        yield return new WaitForSeconds(cooldown);
-        Release();
-        yield return ProjectileCycleRoutine();
+        if (triggered && left>0)
+        {
+            left -= Time.deltaTime;
+            return;
+        }
+        if (triggered)
+        {
+            triggered = false;
+            Release();
+            return;
+        }
+        if (Input.GetKeyDown(ActionKeyCode))
+        {
+            left = cooldown;
+            triggered = true;
+            Use();
+        }
     }
 }

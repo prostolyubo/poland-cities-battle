@@ -20,6 +20,7 @@ public class RoundManager : MonoBehaviour
         second = Instantiate(second, map.spawn2.position, Quaternion.identity, null);
         first.GetComponent<ControlSchemeDealer>().scheme = firstScheme;
         second.GetComponent<ControlSchemeDealer>().scheme = secondScheme;
+        first.isFirst = true;
         firstName.text = first.displayName;
         secondName.text = second.displayName;
         isIngame = true;

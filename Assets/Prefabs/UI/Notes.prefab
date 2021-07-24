@@ -569,6 +569,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: fab60c5188c21374b8c0545dcb4c8969,
         type: 3}
+    - target: {fileID: 7388523583386643525, guid: 39edf2ac9781ae54aa77eb21e8f9e4eb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c939033ebc000c1468ece8bca6a4f58b,
+        type: 3}
+    - target: {fileID: 7388523583386643525, guid: 39edf2ac9781ae54aa77eb21e8f9e4eb,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7847034920856284687, guid: 39edf2ac9781ae54aa77eb21e8f9e4eb,
         type: 3}
       propertyPath: m_Group
@@ -652,6 +663,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8962177750336518730, guid: 39edf2ac9781ae54aa77eb21e8f9e4eb,
+        type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 6784669519049644318, guid: 5a952d61f3686044b8cfc0dda1704a21,
+        type: 3}
     - target: {fileID: 9188647500509861029, guid: 39edf2ac9781ae54aa77eb21e8f9e4eb,
         type: 3}
       propertyPath: m_Group

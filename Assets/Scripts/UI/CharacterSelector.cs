@@ -51,10 +51,12 @@ public class CharacterSelector : MonoBehaviour
         using (StringReader reader = new StringReader(legends.text))
         {
             string line = reader.ReadLine();
-            while (line.Length == 0 
+            while ( line.Length == 0 
                 || !(line.StartsWith("#") && line.Substring(1).ToLower() == prefab.displayName.ToLower()))
             {
                 line = reader.ReadLine();
+                if (line == null)
+                    break;
             }
             line = reader.ReadLine();
             while (line != null && !line.StartsWith("#"))

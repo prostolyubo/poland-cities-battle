@@ -14,6 +14,7 @@ public class Digger : MonoBehaviour
     public float digHeight;
     public RoundManager manager;
     public PlayerController player;
+    public SpriteAnimator moudPrefab;
     
     private void Awake()
     {
@@ -30,10 +31,10 @@ public class Digger : MonoBehaviour
         this.callback = callback;
         neutralBottom.SetActive(false);
         diggingBottom.SetActive(true);
-        StartCoroutine(DiggingRoutine());
+        StartCoroutine(DiggingBeginRoutine());
     }
 
-    private IEnumerator DiggingRoutine()
+    private IEnumerator DiggingBeginRoutine()
     {
         float left = digTime;
         body.bodyType = RigidbodyType2D.Kinematic;
@@ -44,17 +45,34 @@ public class Digger : MonoBehaviour
             yield return null;
         }
         Teleport();
-        left = digTime;
+        root.gameObject.SetActive(false);
+    }
+    private IEnumerator DiggingEndRoutine(GameObject instance)
+    {
+        float left = digTime/4f;
         neutralBottom.SetActive(true);
         diggingBottom.SetActive(false);
         while (left > 0)
         {
             left -= Time.deltaTime;
-            root.position -= (Vector3.down * Time.deltaTime * digHeight);
+            root.position -= (Vector3.down * Time.deltaTime * digHeight * 4f);
             yield return null;
         }
         body.bodyType = RigidbodyType2D.Dynamic;
+        Destroy(instance);
         FinishMove();
+    }
+
+    private Action<int, int> HandleFrameChange(GameObject instance)
+    {
+        return (state, frame) =>
+        {
+            if (frame == 3)
+            {
+                root.gameObject.SetActive(true);
+                StartCoroutine(DiggingEndRoutine(instance));
+            }
+        };
     }
 
     private void Teleport()
@@ -66,6 +84,9 @@ public class Digger : MonoBehaviour
             Teleport();
             return;
         }
+        SpriteAnimator instance = Instantiate(moudPrefab);
+        instance.OnFrame += HandleFrameChange(instance.gameObject);
+        instance.transform.position = hit.point;
         root.transform.position = new Vector3(hit.point.x, hit.point.y - digHeight * digTime);
     }
 

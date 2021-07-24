@@ -17,7 +17,7 @@ public class ShieldActor : MonoBehaviour
         controller.OnUseTriggered += HandleUse;
         controller.OnDisengaged += HandleDisengage;
     }
-
+    
     private void HandleDisengage()
     {
         isShielding = false;
