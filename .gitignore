@@ -5,6 +5,4 @@
 /Untracked
 .vs
 
-Assets/GFX/**/*.*
-!/Assets/GFX/sync.sh
-!/Assets/GFX/**/*.meta
+*.csproj
