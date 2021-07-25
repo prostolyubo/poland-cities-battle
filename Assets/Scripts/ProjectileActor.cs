@@ -45,7 +45,8 @@ namespace Assets
             if (!waitForSignal)
                 Fire();
 
-            signaller?.Play();
+            if (signaller != null)
+                signaller.Play();
         }
 
         private void Shoot(Action obj)

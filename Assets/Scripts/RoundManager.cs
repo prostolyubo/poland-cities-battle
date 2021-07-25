@@ -11,10 +11,19 @@ public class RoundManager : MonoBehaviour
     public string winMessage;
     public bool isIngame;
     public Map[] maps;
+    public PlayerActor[] actors;
 
     [ContextMenu("Start")]
     public void StartRound()
     {
+        if (first == null)
+        {
+            first = actors[Random.Range(0, actors.Length)];
+        }
+        if (second == null)
+        {
+            second = actors[Random.Range(0, actors.Length)];
+        }
         map = Instantiate(maps[UnityEngine.Random.Range(0, maps.Length)]);
         first = Instantiate(first, map.spawn1.position, Quaternion.identity, null);
         second = Instantiate(second, map.spawn2.position, Quaternion.identity, null);

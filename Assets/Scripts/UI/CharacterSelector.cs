@@ -17,13 +17,12 @@ public class CharacterSelector : MonoBehaviour
 
     private void Awake()
     {
-        if (prefab == null)
-        {
-            toggle.interactable = false;
-            return;
-        }
         toggle.onValueChanged.AddListener(HandleCharacterSelected);
-        characterLegend = GetCharacterLegend();
+        if (prefab != null)
+            characterLegend = GetCharacterLegend();
+        else
+            characterLegend = "Wybrana losowo postać.";
+
         if (toggle.isOn)
             legend.text = characterLegend;
     }
