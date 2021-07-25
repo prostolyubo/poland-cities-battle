@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 1610567059495062919}
   - component: {fileID: 1205040616699829724}
   - component: {fileID: 2991492762536466365}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GoatAnim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,6 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls: {fileID: 5427401721239631700}
   isPrimary: 1
+  other: {fileID: 0}
+  blockWithOther: 0
 --- !u!1 &3282343509546041786
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +234,7 @@ GameObject:
   - component: {fileID: 3282343509546041788}
   - component: {fileID: 3282343509546041789}
   - component: {fileID: 3282343509546041787}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PotatoMount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8558975475585086804}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,6 +333,16 @@ PrefabInstance:
         type: 3}
       propertyPath: regenSpeed
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282343510126907573, guid: 953c414b359f9b84ab567e361ba6cd55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282343510349970257, guid: 953c414b359f9b84ab567e361ba6cd55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3282343510465724992, guid: 953c414b359f9b84ab567e361ba6cd55,
         type: 3}
@@ -406,6 +418,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Potatoer Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282343510465724998, guid: 953c414b359f9b84ab567e361ba6cd55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282343510907783365, guid: 953c414b359f9b84ab567e361ba6cd55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5157781861328972037, guid: 953c414b359f9b84ab567e361ba6cd55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3282343510465724997, guid: 953c414b359f9b84ab567e361ba6cd55, type: 3}
