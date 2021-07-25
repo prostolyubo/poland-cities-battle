@@ -62,6 +62,8 @@ public class PlayerActor : MonoBehaviour
     internal void DealDamage(float damage)
     {
         HP -= damage;
+        if (HP < 0)
+            HP = 0;
         OnDamageTaken?.Invoke(this);
     }
 

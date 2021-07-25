@@ -29,6 +29,8 @@ public class RoundManager : MonoBehaviour
         second = Instantiate(second, map.spawn2.position, Quaternion.identity, null);
         first.GetComponent<ControlSchemeDealer>().scheme = firstScheme;
         second.GetComponent<ControlSchemeDealer>().scheme = secondScheme;
+        first.GetComponent<PlayerController>().manager = this;
+        second.GetComponent<PlayerController>().manager = this;
         first.isFirst = true;
         firstName.text = first.displayName;
         secondName.text = second.displayName;
@@ -39,7 +41,6 @@ public class RoundManager : MonoBehaviour
     {
         PlayerActor.OnDamageTaken += HandleDamageTaken;
     }
-
   
     private void HandleDamageTaken(PlayerActor player)
     {
@@ -56,5 +57,6 @@ public class RoundManager : MonoBehaviour
 
         gameOver.SetActive(true);
         Time.timeScale = 0;
+        Camera.main.GetComponent<CameraController>().enabled = false;
     }
 }
