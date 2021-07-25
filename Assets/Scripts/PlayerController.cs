@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     public event Action<bool> OnWalkingChanged;
     public event Action<bool> OnGroundChanged;
 
+    public RoundManager manager { get; set; }
+    public bool skipMapCheck;
+
     void FixedUpdate()
     {
         SetGround(body.GetContacts(contacts) > 0);
@@ -73,5 +76,8 @@ public class PlayerController : MonoBehaviour
 
         if (body.velocity.y > maxJumpVelocity)
             body.velocity = new Vector2(body.velocity.x, maxJumpVelocity);
+
+        if (!skipMapCheck && root.transform.position.y < manager.map.lowerBound.position.y)
+            target.DealDamage(100);
     }
 }

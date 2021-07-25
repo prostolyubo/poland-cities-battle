@@ -517,6 +517,8 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  other: {fileID: 0}
+  blockWithOther: 0
 --- !u!114 &3181412602130467510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,6 +742,8 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d7f57acf2fc6a534ebcfcc5b9fb8b066,
       type: 2}
+  other: {fileID: 0}
+  blockWithOther: 0
 --- !u!111 &247593975333133340
 Animation:
   m_ObjectHideFlags: 0
@@ -966,13 +970,19 @@ PrefabInstance:
     - target: {fileID: 1770023572379595730, guid: 953c414b359f9b84ab567e361ba6cd55,
         type: 3}
       propertyPath: regenSpeed
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3282343510465724992, guid: 953c414b359f9b84ab567e361ba6cd55,
         type: 3}
       propertyPath: displayName
       value: "Krak\xF3w"
       objectReference: {fileID: 0}
+    - target: {fileID: 3282343510465724992, guid: 953c414b359f9b84ab567e361ba6cd55,
+        type: 3}
+      propertyPath: avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 545a9e7400b41bf4da258527b4d95acd,
+        type: 3}
     - target: {fileID: 3282343510465724996, guid: 953c414b359f9b84ab567e361ba6cd55,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -15,8 +15,8 @@ TagManager:
   - 
   - Sword
   - DragonTail
-  - 
-  - 
+  - Potato
+  - Goat
   - 
   - 
   - 
@@ -43,4 +43,7 @@ TagManager:
     locked: 0
   - name: Entities
     uniqueID: 1918059559
+    locked: 0
+  - name: Details
+    uniqueID: 1483562369
     locked: 0

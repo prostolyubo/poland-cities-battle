@@ -14,6 +14,7 @@ public class PlayerActor : MonoBehaviour
 
     public float HP;
     public float maxHP;
+    public Sprite avatar;
 
     bool isFlipped;
 
@@ -62,6 +63,8 @@ public class PlayerActor : MonoBehaviour
     internal void DealDamage(float damage)
     {
         HP -= damage;
+        if (HP < 0)
+            HP = 0;
         OnDamageTaken?.Invoke(this);
     }
 

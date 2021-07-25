@@ -1,0 +1,18 @@
+#POZNAŃ
+Rzut gorącą pyrą
+Atak rogami
+#WARSZAWA
+Pchnięcie mieczem
+Blok tarczą
+#KRAKÓW
+Fireball
+Uderzenie ogonem
+#WROCŁAW
+Rzut krasnalem
+Przekopanie w lsoowe miejsce
+#GDAŃSK
+Dźgnięcie trójzębem
+Atak melodią z rogu
+#RANDOM
+Losowy atak
+Losowy atak specjalny

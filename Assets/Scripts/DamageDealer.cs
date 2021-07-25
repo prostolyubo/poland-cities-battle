@@ -11,11 +11,19 @@ public abstract class DamageDealer : MonoBehaviour
 
     public event Action OnHit;
 
-    protected void TryDealDamage(PlayerActor player)
+    public static event Action<Vector3> OnPlayerHit;
+
+    protected void TryDealDamage(Rigidbody2D targetBody)
     {
         OnHit?.Invoke();
+        if (targetBody == null)
+            return;
+        PlayerActor player = targetBody.GetComponent<PlayerActor>();
         if (isDealing && player != null)
+        {
+            OnPlayerHit?.Invoke(transform.position);
             player.DealDamage(damage);
+        }
 
         if (knockback && player != null)
             player.Knockback(knockbackForce, knockbackDirection);

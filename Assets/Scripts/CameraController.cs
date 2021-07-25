@@ -32,17 +32,16 @@ public class CameraController : MonoBehaviour
         float rightSide = extent + target.position.x;
         float leftSide = target.position.x - extent;
         CalculateOptimalZoom(ref extent);
-        desiredPosition = (manager.first.root.position + manager.second.root.position) / 2;
+        Vector3 medianPosition = (manager.first.root.position + manager.second.root.position) / 2;
+        desiredPosition = medianPosition + Vector3.up* cam.orthographicSize / 2f;
         desiredPosition = Vector3.Lerp(target.position, desiredPosition, lerpFactor);
 
-        if (rightSide > manager.map.rightBound.position.x)
+        if (rightSide > manager.map.rightBound.position.x || leftSide < manager.map.leftBound.position.x)
         {
-            desiredPosition = manager.map.rightBound.position + Vector3.left * extent;
-        } else
-        {
-            if (leftSide < manager.map.leftBound.position.x)
+            if(medianPosition.x > manager.map.rightBound.position.x - extent 
+                || medianPosition.x < manager.map.leftBound.position.x + extent )
             {
-                desiredPosition = manager.map.leftBound.position + Vector3.right * extent;
+                desiredPosition.x = target.position.x;
             }
         }
 
@@ -66,7 +65,5 @@ public class CameraController : MonoBehaviour
 
         cam.orthographicSize = desiredZoom;
         extent = GetCameraExtent();
-
-
     }
 }
