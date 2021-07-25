@@ -57,6 +57,6 @@ public class RoundManager : MonoBehaviour
 
         gameOver.SetActive(true);
         Time.timeScale = 0;
-        Camera.main.GetComponent<CameraController>().enabled = false;
+        Camera.main.GetComponentInParent<CameraController>().enabled = false;
     }
 }
