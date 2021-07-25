@@ -255,8 +255,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14df1a77f28f9c044b60176ba70def0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 20
   isDealing: 0
+  knockback: 0
+  knockbackForce: 0
+  knockbackDirection: {x: 0, y: 0}
 --- !u!50 &6640942737424739358
 Rigidbody2D:
   serializedVersion: 4

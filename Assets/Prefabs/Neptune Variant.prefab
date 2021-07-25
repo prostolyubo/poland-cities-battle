@@ -837,7 +837,7 @@ MonoBehaviour:
   stamina: {fileID: 4580723160392311481}
   angle: 0
   shootForce: 1
-  staminaCost: 0
+  staminaCost: 10
   waitForSignal: 1
   signaller: {fileID: 4834542798821524332}
 --- !u!1 &8982559086926957533

@@ -206,7 +206,7 @@ MonoBehaviour:
   weaponController: {fileID: 2991492762536466365}
   attackPoint: {fileID: 8558975475585086804}
   attackRadius: 0.2
-  damage: 30
+  damage: 5
 --- !u!114 &2991492762536466365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,7 +332,7 @@ PrefabInstance:
     - target: {fileID: 1770023572379595730, guid: 953c414b359f9b84ab567e361ba6cd55,
         type: 3}
       propertyPath: regenSpeed
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3282343510126907573, guid: 953c414b359f9b84ab567e361ba6cd55,
         type: 3}

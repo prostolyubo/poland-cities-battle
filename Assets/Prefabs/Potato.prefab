@@ -4930,7 +4930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5fb00db2ff13847a02f3e96ee917d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 5
+  timer: 10
   particleTerminator: {fileID: 239792669452757379}
 --- !u!114 &239792669452757379
 MonoBehaviour:
