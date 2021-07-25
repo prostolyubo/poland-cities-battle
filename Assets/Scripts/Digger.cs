@@ -19,6 +19,7 @@ public class Digger : MonoBehaviour
     private void Awake()
     {
         controller.OnUseTriggered += HandleUse;
+        manager = FindObjectOfType<RoundManager>(); // Game Jam! Time is running out
     }
 
     private void HandleUse(Action callback)

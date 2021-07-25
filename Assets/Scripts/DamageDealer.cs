@@ -13,9 +13,12 @@ public abstract class DamageDealer : MonoBehaviour
 
     public static event Action<Vector3> OnPlayerHit;
 
-    protected void TryDealDamage(PlayerActor player)
+    protected void TryDealDamage(Rigidbody2D targetBody)
     {
         OnHit?.Invoke();
+        if (targetBody == null)
+            return;
+        PlayerActor player = targetBody.GetComponent<PlayerActor>();
         if (isDealing && player != null)
         {
             OnPlayerHit?.Invoke(transform.position);

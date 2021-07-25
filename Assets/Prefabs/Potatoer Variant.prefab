@@ -349,6 +349,12 @@ PrefabInstance:
       propertyPath: displayName
       value: "Pozna\u0144"
       objectReference: {fileID: 0}
+    - target: {fileID: 3282343510465724992, guid: 953c414b359f9b84ab567e361ba6cd55,
+        type: 3}
+      propertyPath: avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: f6d1260f1746a854eba8fabc1bfe08cf,
+        type: 3}
     - target: {fileID: 3282343510465724996, guid: 953c414b359f9b84ab567e361ba6cd55,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -513,6 +513,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls: {fileID: 4977756327696349521}
   isPrimary: 0
+  other: {fileID: 0}
+  blockWithOther: 0
 --- !u!114 &3181412602130467510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,6 +733,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls: {fileID: 4977756327696349521}
   isPrimary: 1
+  other: {fileID: 0}
+  blockWithOther: 0
 --- !u!111 &247593975333133340
 Animation:
   m_ObjectHideFlags: 0
@@ -964,6 +968,12 @@ PrefabInstance:
       propertyPath: displayName
       value: "Krak\xF3w"
       objectReference: {fileID: 0}
+    - target: {fileID: 3282343510465724992, guid: 953c414b359f9b84ab567e361ba6cd55,
+        type: 3}
+      propertyPath: avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 545a9e7400b41bf4da258527b4d95acd,
+        type: 3}
     - target: {fileID: 3282343510465724996, guid: 953c414b359f9b84ab567e361ba6cd55,
         type: 3}
       propertyPath: m_LocalPosition.x

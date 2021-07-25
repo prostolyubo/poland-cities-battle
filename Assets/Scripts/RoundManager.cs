@@ -12,6 +12,7 @@ public class RoundManager : MonoBehaviour
     public bool isIngame;
     public Map[] maps;
     public PlayerActor[] actors;
+    public Image winnerAvatar;
 
     [ContextMenu("Start")]
     public void StartRound()
@@ -47,13 +48,14 @@ public class RoundManager : MonoBehaviour
         if (player.HP > 0)
             return;
 
-        string winner;
+        PlayerActor winner;
         if (player == first)
-            winner = second.displayName;
+            winner = second;
         else
-            winner = first.displayName;
+            winner = first;
 
-        winnerName.text = string.Format(winMessage.Replace("\\n", "\n"), winner);
+        winnerName.text = string.Format(winMessage.Replace("\\n", "\n"), winner.displayName);
+        winnerAvatar.sprite = winner.avatar;
 
         gameOver.SetActive(true);
         Time.timeScale = 0;

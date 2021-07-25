@@ -303,6 +303,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls: {fileID: 366026551268033406}
   isPrimary: 0
+  other: {fileID: 0}
+  blockWithOther: 0
 --- !u!1 &3555425219346594547
 GameObject:
   m_ObjectHideFlags: 0
@@ -10347,6 +10349,12 @@ PrefabInstance:
       propertyPath: displayName
       value: "Wroc\u0142aw"
       objectReference: {fileID: 0}
+    - target: {fileID: 3282343510465724992, guid: 953c414b359f9b84ab567e361ba6cd55,
+        type: 3}
+      propertyPath: avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 7aa1b09e48671d84ea013c781a1ba5e3,
+        type: 3}
     - target: {fileID: 3282343510465724996, guid: 953c414b359f9b84ab567e361ba6cd55,
         type: 3}
       propertyPath: m_LocalPosition.x

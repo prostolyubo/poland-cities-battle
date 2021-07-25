@@ -14,6 +14,7 @@ public class PlayerActor : MonoBehaviour
 
     public float HP;
     public float maxHP;
+    public Sprite avatar;
 
     bool isFlipped;
 

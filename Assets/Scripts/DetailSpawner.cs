@@ -53,7 +53,7 @@ public class DetailSpawner : MonoBehaviour{
         public DecalAnimator Make()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sortingLayerName = "Detail";
+            spriteRenderer.sortingLayerName = "Details";
             self = transform;
             return this;
         }
