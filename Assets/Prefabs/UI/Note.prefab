@@ -157,7 +157,10 @@ MonoBehaviour:
   manager: {fileID: 0}
   prefab: {fileID: 0}
   legend: {fileID: 0}
+  primaryMove: {fileID: 0}
+  secondaryMove: {fileID: 0}
   legends: {fileID: 4900000, guid: f9d745e5234bf2a4390aef1d35c6e4b2, type: 3}
+  attacks: {fileID: 4900000, guid: a82e549da951ebf4b9f1000899f9ee51, type: 3}
 --- !u!1 &3550885999529058409
 GameObject:
   m_ObjectHideFlags: 0

@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controls: {fileID: 5427401721239631700}
-  isPrimary: 1
+  isPrimary: 0
   other: {fileID: 0}
   blockWithOther: 0
 --- !u!1 &3282343509546041786
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controls: {fileID: 5427401721239631700}
-  isPrimary: 0
+  isPrimary: 1
   cooldown: 1
 --- !u!114 &3282343509546041787
 MonoBehaviour:
