@@ -14,6 +14,7 @@ public abstract class WeaponController : MonoBehaviour
 
     [SerializeField]
     bool isPrimary;
+    private Coroutine failsafe;
 
     protected KeyCode ActionKeyCode => isPrimary ? controls.scheme.primary : controls.scheme.secondary;
 
@@ -21,10 +22,22 @@ public abstract class WeaponController : MonoBehaviour
     {
         isLocked = true;
         OnUseTriggered?.Invoke(Release);
+        if (failsafe != null)
+            failsafe = StartCoroutine(Failsafe());
+    }
+
+    private IEnumerator Failsafe()
+    {
+        yield return new WaitForSecondsRealtime(5);
+        Release();
     }
 
     protected void Release()
     {
         isLocked = false;
+        if (failsafe == null)
+            return;
+        StopCoroutine(failsafe);
+        failsafe = null;
     }
 }

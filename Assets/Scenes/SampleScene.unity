@@ -179,7 +179,7 @@ MonoBehaviour:
   map: {fileID: 0}
   firstScheme: {fileID: 11400000, guid: 48790d4615b93574da2818afc3bacad7, type: 2}
   secondScheme: {fileID: 11400000, guid: 5f94d8c22484fae498637ec1ce215ba7, type: 2}
-  winMessage: Koniec gry!\n<b>{0} wygrywa!</b>
+  winMessage: Koniec gry!\n{0} wygrywa!
   isIngame: 0
   maps:
   - {fileID: 3951708977966188260, guid: 57cb0a490ef53de4ea776e18ed502abc, type: 3}
