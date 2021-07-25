@@ -12,7 +12,7 @@ public class WigglyDriver : MonoBehaviour
     Vector2 baseUpDir, baseDownDir, direction, startDirection, desiredDirection;
     float currentPeriod;
 
-    private void Awake()
+    private void Start()
     {
         baseUpDir = Rotate(Vector2.right, -angle);
         baseDownDir = Rotate(Vector2.right, angle);
@@ -20,7 +20,7 @@ public class WigglyDriver : MonoBehaviour
         currentPeriod = period * osscillation;
         NewDirection();
         startDirection = desiredDirection * osscillation;
-        desiredDirection = flipReference.right * force;
+        desiredDirection = flipReference.right * force * flipReference.localScale.x;
         side = Random.value < 0.5f;
     }
 

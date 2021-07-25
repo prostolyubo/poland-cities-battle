@@ -8,6 +8,7 @@ public abstract class WeaponController : MonoBehaviour
     public event Action<Action> OnUseTriggered;
 
     protected bool isLocked = false;
+    public bool IsLocked => isLocked;
     [SerializeField]
     ControlSchemeDealer controls;
 
