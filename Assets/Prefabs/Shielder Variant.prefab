@@ -118,6 +118,11 @@ MonoBehaviour:
   controller: {fileID: 3311280703401560621}
   stamina: {fileID: 7423218339452806878}
   animator: {fileID: 1081891381}
+  Play_sound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9d25c41533286434fae713e99a16bb1e,
+      type: 2}
 --- !u!114 &3311280703401560621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,8 +334,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls: {fileID: 660436463792409900}
   isPrimary: 1
-  other: {fileID: 0}
-  blockWithOther: 0
+  Play_sound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fdb1c68f9530a4e4ba47c2047ec13c9b,
+      type: 2}
 --- !u!111 &1623193456
 Animation:
   m_ObjectHideFlags: 0
